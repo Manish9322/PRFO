@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    line-height: 1.6;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.padding-td {
+    padding: 2rem 0 2rem 0;
+}
+
+.padding-lr {
+    padding: 0 1rem 0 1rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.p-font-size {
+    font-size: 21px;
+}
+
+.p-font-size-2 {
+    font-size: 27px;
+}
+
+
+#navbar .navbar-div {
+    /* position: absolute; */
+}
+#navbar {
+    background-color: #0077B6;
+    height: 4rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#navbar a img{
+    margin: 0rem 1rem 0 2rem;
+    background-color: #0077B6;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#navbar nav {
+    margin: 0rem 7rem 0 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar nav ul li {
+    margin: 0rem 1rem 0rem 1rem;
+    color: white;
+    font-size: 18px;
+    text-wrap: nowrap;
+}
+
+#navbar nav ul .nav-link.active li{
+    color: #0077B6;
+    transition: color 1s ease;
+
+}
+.nav-link {
+    z-index: 1;
+}
+
+.nav-link.active li {
+    color: #0077B6;
+    font-weight: bold;
+}
+
+.indicator {
+    position: absolute;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#about .about-div p {
+    font-size: 27px;
+}
+
+#about .my-name {
+    padding: 5rem 0 0 0;
+
+}
+
+#about h1 {
+    font-size: 7.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+#about .links ul {
+    display: flex;
+    justify-content: center;
+}
+
+#about .links ul i {
+    font-size: 2.0rem;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0.7rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+#about .links .resume {
+    font-size: 1.8rem;
+    margin: 0 0.5rem 0 0.7rem;
+    padding: 0.8rem;
+}
+
+
+#about .links ul li {
+    background-color: #0077B6;
+    padding: 0.4rem 0rem;
+    margin: 0.3rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+#about .summary {
+    font-size: 27px;
+}
+
+
+#work-experience {
+    display: flex;
+    text-align: center;
+}
+
+#work-experience #work-div {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+#work-experience #work-div #info p {
+    line-height: 0;
+}
+
+#work-experience #work-div #info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#work-experience #work-div #info .cd {
+    display: flex;
+    justify-content: space-between;
+}
+
+#education .content {
+    text-align: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+#education #marks-p {
+    line-height: 0;
+}
+
+#education .content .ed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.content .ed-list div h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.content .ed-list div p {
+    line-height: 1;
+}
+
+#skills-s .sk-container {
+    text-align: center;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.sk-container .skill-set i {
+    padding: 1rem;
+    font-size: 4rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.sk-container .skill-set i:hover {
+    transform: scale(1.2);
+}
+
+.sk-container .skill-set p {
+    padding: 0;
+    /* margin: 0; */
+}
+
+#projects .project-div {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+#projects .heading {
+    text-align: center;
+}
+
+#projects .project-list {
+    display: flex;
+    justify-content: center;
+}
+
+#projects .project-list .project-box {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    width: 35vw;
+    height: 35vh;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#projects .project-list .project-box img {
+    max-width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#projects .project-list .project-box p {
+    font-size: 19px;
+    padding: 0 1rem 0 1rem;
+    /* text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+#projects .project-list-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#projects .project-list-2 .project-box {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    width: 35vw;
+    height: 35vh;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#projects .project-list-2 .project-box img {
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#projects .project-list-2 .project-box p {
+    font-size: 19px;
+    padding: 0 1rem 0 1rem;
+    /* text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+#projects .more {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#projects .more i {
+    font-size: 3rem;
+}
+
+#projects .more {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#projects .more:hover {
+    transform: scale(1.05);
+}
+
+
+.card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.5);
+    transition: left 0.5s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .overlay {
+    left: 0;
+}
+
+.contents {
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+}
+
+
+#contact .contact-div {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+
+#contact .contact-div .heading {
+    text-align: center;
+}
+
+#contact .contact-div .qoute-line {
+    text-align: center;
+    line-height: 0;
+}
+
+
+#contact .contact-div .main-part {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .contact-div .form input,
+textarea {
+    width: 100%;
+    height: 3rem;
+}
+
+#contact .contact-div .form .f-name {
+    padding: 0 1rem 0 0rem;
+}
+
+.form label {
+    font-size: 21px;
+}
+
+.form input,
+textarea {
+    margin: 5px 0 15px 0;
+    font-size: 21px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+.form .submit button {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 4rem;
+    margin-top: 15px;
+    font-size: 21px;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.pip {
+    transition: transform 0.2s ease;
+}
+
+.pip:hover {
+    transform: scale(1.04);
+}
+
+
+.form .submit button:hover {
+    background-color: #0077B6;
+    color: white;
+}
+
+.pop {
+    transition: transform 0.3s ease;
+}
+
+.pop:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top {
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0077B6;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+    border: 5px solid white;
+}
+
+.back-to-top .arrow-up{
+    font-size: 1.5rem;
+}
+
+#footer .footer-div {
+    background-color: #0077B6;
+    padding: 0;
+    margin: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer-div p {
+    margin: 0;
+    color: white;
+}
+
+#footer{
+    padding: 2rem 0 0rem 0;
+}

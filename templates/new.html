@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form">
+        <form action="/submit" method="post" id="contactForm">
+            <table>
+                <tr class="name">
+                    <td class="f-name">
+                        <label for="f-name">First name</label>
+                        <input type="text" name="first-name" id="f-name" required>
+                    </td>
+                    <td class="l-name">
+                        <label for="l-name">Last name</label>
+                        <input type="text" name="last-name" id="l-name" required>
+                    </td>
+                </tr>
+                <tr class="email">
+                    <td colspan="2">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr class="message">
+                    <td colspan="2">
+                        <label for="message">What can I help you with?</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2">
+                        <button class="pip" type="submit" value="Submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- For Font -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='Img/Icon-1.png') }}" type="image/x-icon">
+
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</head>
+
+<body>
+
+    <section id="navbar">
+
+        <a href=""><img class="pip" src="{{ url_for('static', filename='Img/Icon-2.png') }}" alt=""></a>
+
+        <div class="navbar-div">
+            <nav>
+
+                <ul>
+                    <a href="#about" class="nav-link">
+                        <li>About Me</li>
+                    </a>
+
+                    <a href="#work-experience" class="nav-link">
+                        <li>Work Experience</li>
+                    </a>
+                    <a href="#education" class="nav-link">
+                        <li>Education</li>
+                    </a>
+                    <a href="#skills-s" class="nav-link">
+                        <li>Skills</li>
+                    </a>
+                    <a href="#projects" class="nav-link">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <li>Contact me</li>
+                    </a>
+                </ul>
+                <div class="indicator"></div>
+
+            </nav>
+        </div>
+    </section>
+
+    <section id="about">
+
+        <div class="about-div padding-td">
+            <div class="my-name">
+                <h1 class="padding-td">Manish <span style="color: #0077B6;">Sonawane</span></h1>
+            </div>
+
+            <div class="info">
+                <p>Navi Mumbai, Maharashtra, India · +91 93228 97948 ·<br>
+                    <a href="mailto:manishsonawane3010@gmail.com"><span style="color: #0077B6;">
+                            manishsonawane3010@gmail.com</span></a>
+                </p>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <a class="pip" href="https://www.linkedin.com/in/manish-sonawane-599baa264/" target="_blank">
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                    </a>
+                    <a class="pip" href="https://github.com/Manish9322" target="_blank">
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </a>
+                    <a class="pip" href="https://www.instagram.com/manish_ashok_sonwane_/" target="_blank">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a>
+                    <a class="pip" href="/static/pdfs/Resume.pdf" target="_blank">
+                        <li><i class="resume fa-solid fa-file-lines"></i></li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="summary padding-td">
+                <span style="color: #0077B6;">Passionate</span> and ambitious computer science graduate with a strong
+                foundation
+                in programming, algorithms<br> and software development,
+                Eager to embark on a challenging tech career to solve real-world problems.
+            </div>
+
+        </div>
+    </section>
+
+    <section id="work-experience">
+
+        <div id="work-div" class="padding-td padding-lr p-font-size">
+
+            <div class="heading">
+                <h2>Work Experience</h2>
+            </div>
+
+            <div id="info">
+                <div id="job-discription">
+                    <h2 id="post-name">Web Developer | <span style="color: #0077B6;">Intern</span></h2>
+                    <div class="cd">
+                        <p>Tescom Business Solutions</p>
+                        <p>May 2023 - July 2023</p>
+                    </div>
+                </div>
+
+                <div id="details" style="display: block;" class="padding-td">
+
+                    <span style="color: #0077B6;">India's</span> leading Multi-Cloud Managed Services Provider (AWS,
+                    Azure, Tata Communications, NTT
+                    (Netmagic), Sify ,STT Limited, Cloud Exchange & Google Cloud) and have good expertise & experience
+                    in delivering and managing complex cloud based solutions for Enterprise Class Workloads.
+                    <br>
+                    <br>
+                    Demonstrated proficiency in leveraging online resources effectively to conduct targeted research and
+                    acquire the necessary knowledge in a timely manner.
+
+                    Utilized WordPress to build interactive and dynamic web components.
+
+                    collaborated with team members, attending meetings, and effectively communicating progress,
+                    challenges, and solutions.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="education">
+        <div id="ed-container">
+            <div class="content">
+                <div class="heading">
+                    <h2>Education</h2>
+                </div>
+
+                <div class="ed-list p-font-size">
+
+                    <div>
+                        <p style="font-size: 27px;">Tilak Education Society's S. K. College of Science and Commerce,
+                            Nerul, India</p>
+                        <div class="ed">
+                            <p style="color: #0077B6; line-height: 0;">Bachelor of science - Computer Science</p>
+                            <p style="color: #0077B6; line-height: 0;">2020 - 2023</p>
+                        </div>
+                        <p id="marks-p">CGPA : 9.68</p>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 27px; padding-top: 1.5rem;">New Kalwa High School and Jr. College, Kalwa,
+                            India</p>
+
+                        <div class="ed">
+                            <p style="color: #0077B6; line-height: 0;">HSC Science</p>
+                            <p style="color: #0077B6; line-height: 0;">2019 - 2020</p>
+                        </div>
+                        <p id="marks-p">Percentage : 60.77 %</p>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 27px; padding-top: 1.5rem;">Saraswati Vidyalaya, Airoli, India</p>
+                        <div class="ed">
+                            <p style="color: #0077B6; line-height: 0;">SSC</p>
+                            <p style="color: #0077B6; line-height: 0;">2017 - 2018</p>
+                        </div>
+                        <p id="marks-p">Percentage : 81 %</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills-s">
+        <div class="sk-container skills p-font-size-2">
+
+            <div class="content">
+                <div class="heading">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skill-set">
+
+                    <div id="languages" style="padding: 0;">
+                        <p>Languages</p>
+                        <i class="devicon-python-plain colored"></i>
+                        <i class="devicon-java-plain colored"></i>
+                        <i class="devicon-php-plain colored"></i>
+                        <i class="devicon-bash-plain colored"></i>
+
+                    </div>
+
+                    <div id="web-front">
+                        <p><span style="color: #0077B6;">Web</span> Development</p>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored"></i>
+                    </div>
+
+                    <div id="database">
+                        <p>Database</p>
+                        <i class="devicon-mysql-original colored"></i>
+                    </div>
+
+                    <div id="operating-sys">
+                        <p>Operating <span style="color: #0077B6;">System</span></p>
+                        <i class="devicon-windows11-original colored"></i>
+                        <i class="devicon-linux-plain colored"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <div class="project-div">
+
+            <div class="heading">
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-list">
+
+                <div class="project-box card">
+
+                    <img src="{{ url_for('static', filename='Img/TempCast.png') }}" alt="TempCast" srcset="">
+
+
+                    <div class="overlay">
+                        <div class="contents">
+                            <h2 style="color:white; text-align: center;" class="heading">TempCast</h2>
+                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, illum.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-box card">
+
+                    <img src="{{ url_for('static', filename='Img/Snake-Game.png') }}" alt="Snake-Game" srcset="">
+
+                    <div class="overlay">
+                        <div class="contents">
+                            <h2 style="color:white; text-align: center;" class="heading">Snake Game</h2>
+                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, illum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-box card">
+
+                    <img src="{{ url_for('static', filename='Img/Calculator-Using-React.js.png') }}" alt="" srcset="">
+
+                    <div class="overlay">
+                        <div class="contents">
+                            <h2 style="color:white; text-align: center;" class="heading">Calculator Using React.js</h2>
+                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, illum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-list-2">
+
+                <div class="project-box card">
+
+                    <img src="{{ url_for('static', filename='Img/Converter.png') }}" alt="" srcset="">
+
+                    <div class="overlay">
+                        <div class="contents">
+                            <h2 style="color:white; text-align: center;" class="heading">Currency Converter</h2>
+                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, illum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-box card">
+
+                    <img src="{{ url_for('static', filename='Img/HMS.png') }}" alt="" srcset="">
+
+                    <div class="overlay">
+                        <div class="contents">
+                            <h2 style="color:white; text-align: center;" class="heading">Hotel Management System</h2>
+                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, illum.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-box more">
+                    <a href="">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="contact-div">
+            <div class="heading">
+                <h2>Contact</h2>
+            </div>
+            <div class="main-part">
+                <div class="quote-line" style="display: block; height: 20px;"></div>
+                <div class="form">
+                    <form action="/submit" method="post" id="contactForm">
+                        <table>
+                            <tr class="name">
+                                <td class="f-name">
+                                    <label for="f-name">First name</label>
+                                    <input type="text" name="first-name" id="f-name" required>
+                                </td>
+                                <td class="l-name">
+                                    <label for="l-name">Last name</label>
+                                    <input type="text" name="last-name" id="l-name" required>
+                                </td>
+                            </tr>
+                            <tr class="email">
+                                <td colspan="2">
+                                    <label for="email">Email *</label>
+                                    <input type="email" name="email" id="email" required>
+                                </td>
+                            </tr>
+                            <tr class="message">
+                                <td colspan="2">
+                                    <label for="message">What can I help you with?</label>
+                                    <textarea name="message" id="message" required></textarea>
+                                </td>
+                            </tr>
+                            <tr class="submit">
+                                <td colspan="2">
+                                    <button class="pip" type="submit" value="Submit">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-to-top" onclick="goToTop()" style="display: block;"><i
+            class="fa-solid fa-arrow-up arrow-up"></i></button>
+
+    <section id="footer">
+        <footer class="footer-div">
+            <p> Developed and designed by Manish sonawane. <i class="fa-regular fa-copyright"></i> All rights reserved.
+            </p>
+        </footer>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        
+        ///  Form Handling - it prevents the website from going on .py file.
+
+        $(document).ready(function () {
+            $('#contactForm').on('submit', function (event) {
+                event.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/submit',
+                    data: $(this).serialize(),
+                    success: function () {
+
+                        $('#contactForm')[0].reset();
+                    },
+                    error: function () {
+
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
