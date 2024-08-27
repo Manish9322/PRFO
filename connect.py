@@ -1,10 +1,11 @@
 from flask import Flask, request, render_template
 import requests
+import os
 
 app = Flask(__name__)
 
-T_Token = "7214212711:AAGHQK5ooVa6O-7toPt1XBg4m3MLYZflpHM"
-T_Chat_ID = 1489787744
+T_Token = os.getenv('TELEGRAM_TOKEN')
+T_Chat_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 def smvt(first_name,last_name, email, message):
     text = f"Portfolio Contact form : \n\n First name: {first_name} \n Last name : {last_name} \n Email: {email} \n\n Message: {message}"
