@@ -1,16 +1,19 @@
 from flask import Flask, request, render_template
-import mysql.connector
-from mysql.connector import Error
-from datetime import datetime
+import requests
 
 app = Flask(__name__)
 
-db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'Manish@123',
-    'database': 'form'
-}
+T_Token = "7214212711:AAGHQK5ooVa6O-7toPt1XBg4m3MLYZflpHM"
+T_Chat_ID = 1489787744
+
+def smvt(first_name,last_name, email, message):
+    text = f"Portfolio Contact form : \n\n First name: {first_name} \n Last name : {last_name} \n Email: {email} \n\n Message: {message}"
+    url = f"https://api.telegram.org/bot{T_Token}/sendMessage"
+    payload = {
+        'chat_id': T_Chat_ID,
+        'text': text
+    }
+    requests.post(url, data=payload)
 
 @app.route('/', methods=['GET'])
 def form():
@@ -22,29 +25,13 @@ def submit():
     last_name = request.form['last-name']
     email = request.form['email']
     message = request.form['message']
-    timestamp = datetime.now()
 
     try:
-        conn = mysql.connector.connect(**db_config)
+        smvt(first_name, last_name, email, message)
+        return 'Registration successful!'
 
-        if conn.is_connected():
-            cursor = conn.cursor()
-
-            sql = "INSERT INTO userdata (fname, lname, email, message, timestamp) VALUES (%s, %s, %s, %s, %s)"
-            values = (first_name, last_name, email, message, timestamp)
-            
-            cursor.execute(sql, values)
-            conn.commit()
-
-            return 'Registration successful!'
-
-    except Error as e:
+    except ImportError as e:
         return f'Error: {e}'
-
-    finally:
-        if conn.is_connected():
-            cursor.close()
-            conn.close()
 
 if __name__ == '__main__':
     app.run(debug=False)
