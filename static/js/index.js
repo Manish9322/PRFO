@@ -1,8 +1,9 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
   const indicator = document.querySelector(".indicator");
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const navBar = document.querySelector("nav");
 
   function updateIndicator(link) {
     const rect = link.getBoundingClientRect();
@@ -35,6 +36,16 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active");
       updateIndicator(link);
     });
+  });
+
+  hamburgerMenu.addEventListener("click", function () {
+    navBar.classList.toggle("active");
+  });
+
+  navBar.addEventListener("click", function (event) {
+    if (event.target.tagName === "LI") {
+      navBar.classList.remove("active");
+    }
   });
 
   window.addEventListener("scroll", updateOnScroll);

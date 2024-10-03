@@ -22,7 +22,11 @@
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+
 
 </head>
 
@@ -30,12 +34,18 @@
 
     <section id="navbar">
 
-        <a href=""><img class="pip" src="{{ url_for('static', filename='Img/Icon-2.png') }}" alt=""></a>
+        <a href="#"><img class="pip" src="{{ url_for('static', filename='Img/Icon-2.png') }}" alt=""></a>
 
         <div class="navbar-div">
             <nav>
 
-                <ul>
+                <div id="hamburger-menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <ul id="nav-link">
                     <a href="#about" class="nav-link">
                         <li>About Me</li>
                     </a>
@@ -57,7 +67,6 @@
                     </a>
                 </ul>
                 <div class="indicator"></div>
-
             </nav>
         </div>
     </section>
@@ -78,7 +87,7 @@
 
             <div class="links">
                 <ul>
-                    <a class="pip" href="https://www.linkedin.com/in/manish-sonawane-599baa264/" target="_blank">
+                    <a class="pip" href="https://www.linkedin.com/in/m-sonawane/" target="_blank">
                         <li><i class="fa-brands fa-linkedin"></i></li>
                     </a>
                     <a class="pip" href="https://github.com/Manish9322" target="_blank">
@@ -87,7 +96,7 @@
                     <a class="pip" href="https://www.instagram.com/manish_ashok_sonwane_/" target="_blank">
                         <li><i class="fa-brands fa-instagram"></i></li>
                     </a>
-                    <a class="pip" href="/static/pdfs/Resume.pdf" target="_blank">
+                    <a class="pip" href="/static/pdfs/Manish-sonawane.pdf" target="_blank">
                         <li><i class="resume fa-solid fa-file-lines"></i></li>
                     </a>
 
@@ -141,6 +150,37 @@
 
             </div>
 
+            <div id="info">
+                <div id="job-discription">
+                    <h2 id="post-name">Web Developer | <span style="color: #0077B6;">Intern</span></h2>
+                    <div class="cd">
+                        <p>EazyByts Infotech</p>
+                        <p>Aug 2024 - Sep 2024</p>
+                    </div>
+                </div>
+
+                <div id="details" style="display: block;" class="padding-td">
+
+                    <span style="color: #0077B6;">EazyByts</span>, a top digital marketing firm known for
+                    successfully delivering thousands of projects to clients. They offer a wide range of services,
+                    including web development, SEO, social media marketing, and various digital advertising solutions
+                    like Facebook and Google ads. With 24/7 support and a focus on affordability, their team is
+                    dedicated to helping brands grow in the digital landscape.
+                    <br>
+                    <br>
+                    Developed a Personal Portfolio Website, showcasing creative UI/UX design, using HTML, CSS, and
+                    JavaScript, ensuring responsiveness and smooth navigation.
+
+                    Built a fully functional Fitness Tracker website with a sleek user interface, leveraging React.js
+                    for dynamic data handling and API integration.
+
+                    Gained hands-on experience in modern web technologies, enhancing proficiency in front-end
+                    development while delivering high-quality, user-centric projects.
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
@@ -155,17 +195,29 @@
                 <div class="ed-list p-font-size">
 
                     <div>
-                        <p style="font-size: 27px;">Tilak Education Society's S. K. College of Science and Commerce,
+                        <p class="first-college">R. C. Patel's Institute of Management Research and Development,
+                            Shirpur, India</p>
+                        <div class="ed">
+                            <p style="color: #0077B6;">Master of Computer Application</p>
+                            <p style="color: #0077B6;">2023 - Present</p>
+                        </div>
+                        <p id="marks-p">1st Year CGPA : 9.4</p>
+                    </div>
+
+
+                    <div>
+                        <p class="college">Tilak Education Society's S. K. College of
+                            Science and Commerce,
                             Nerul, India</p>
                         <div class="ed">
-                            <p style="color: #0077B6; line-height: 0;">Bachelor of science - Computer Science</p>
-                            <p style="color: #0077B6; line-height: 0;">2020 - 2023</p>
+                            <p style="color: #0077B6;">Bachelor of science - Computer Science</p>
+                            <p style="color: #0077B6;">2020 - 2023</p>
                         </div>
                         <p id="marks-p">CGPA : 9.68</p>
                     </div>
 
                     <div>
-                        <p style="font-size: 27px; padding-top: 1.5rem;">New Kalwa High School and Jr. College, Kalwa,
+                        <p class="college">New Kalwa High School and Jr. College, Kalwa,
                             India</p>
 
                         <div class="ed">
@@ -176,7 +228,7 @@
                     </div>
 
                     <div>
-                        <p style="font-size: 27px; padding-top: 1.5rem;">Saraswati Vidyalaya, Airoli, India</p>
+                        <p class="college">Saraswati Vidyalaya, Airoli, India</p>
                         <div class="ed">
                             <p style="color: #0077B6; line-height: 0;">SSC</p>
                             <p style="color: #0077B6; line-height: 0;">2017 - 2018</p>
@@ -216,18 +268,37 @@
                         <i class="devicon-javascript-plain colored"></i>
                         <i class="devicon-react-original colored"></i>
                         <i class="devicon-bootstrap-plain colored"></i>
+                    </div>
+
+                    <div id="servers">
+                        <p>Servers</p>
                         <i class="devicon-nodejs-plain-wordmark colored"></i>
+                        <i class="devicon-flask-original-wordmark"></i>
+
+
                     </div>
 
                     <div id="database">
                         <p>Database</p>
                         <i class="devicon-mysql-original colored"></i>
+                        <i class="devicon-postgresql-plain colored"></i>
+
                     </div>
 
                     <div id="operating-sys">
                         <p>Operating <span style="color: #0077B6;">System</span></p>
                         <i class="devicon-windows11-original colored"></i>
                         <i class="devicon-linux-plain colored"></i>
+                    </div>
+
+                    <div id="vc">
+
+                        <p><span style="color: #0077B6;">Version</span> Control</p>
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-original colored"></i>
+
+
+
                     </div>
 
                 </div>
@@ -245,92 +316,328 @@
 
             <div class="project-list">
 
-                <div class="project-box card">
 
-                    <img src="{{ url_for('static', filename='Img/TempCast.png') }}" alt="TempCast" srcset="">
+                <!-- TempCast Card -->
+                <div class="project-box card" id="temp-card">
+                    <img src="{{ url_for('static', filename='Img/TempCast.png') }}" alt="Snake-Game">
+                </div>
 
+                <!-- TempCast Modal -->
+                <div class="modal" id="temp-modal">
 
-                    <div class="overlay">
-                        <div class="contents">
-                            <h2 style="color:white; text-align: center;" class="heading">TempCast</h2>
-                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, illum.</p>
+                    <div class="modal-content">
+                        <h2>TempCast </h2>
+
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/TempCast.png') }}" alt="Snake Game Image">
+                            <div>
+                                <p>TempCast, the Temperature Forecast app, built using React and the OpenWeather API,
+                                    provides
+                                    real-time weather updates with a clean and user-friendly interface.</p>
+                                <p>It displays accurate temperature data and forecasts for any location, adapting
+                                    seamlessly to different devices.</p>
+                                <p>The app is responsive and designed to offer a smooth user experience across desktops
+                                    and mobile devices alike.</p>
+                                <p>It also includes additional weather details like humidity and wind speed, making it a
+                                    comprehensive tool for daily weather tracking.</p>
+
+                                <a href="https://github.com/Manish9322/TempCast" target="_blank"><button>Check
+                                        Now</button></a>
+                                <span class="close-button"><button>Close </button></span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="project-box card">
+                <!-- E-Commerce Card -->
+                <div class="project-box card" id="ecom-card">
+                    <img src="{{ url_for('static', filename='Img/E-Commerce.png') }}" alt="Currency Converter">
+                </div>
 
-                    <img src="{{ url_for('static', filename='Img/Snake-Game.png') }}" alt="Snake-Game" srcset="">
+                <!-- E-Commerce Modal -->
+                <div class="modal" id="ecom-modal">
+                    <div class="modal-content">
+                        <h2>ShopIt</h2>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/E-Commerce.png') }}" alt="Currency Converter">
+                            <div>
+                                <p>ShopIt, the E-commerce Website, is a simple frontend project developed using modern
+                                    web technologies to offer a seamless shopping experience.</p>
+                                <p>It allows users to browse products and add items to their cart, with a clean and
+                                    intuitive interface.</p>
+                                <p>The website features a responsive design, providing users with a smooth shopping
+                                    experience across various devices.</p>
+                                <p>Though currently focused on the frontend, it lays the foundation for future
+                                    integration of backend features like product management and payment gateways.</p>
 
-                    <div class="overlay">
-                        <div class="contents">
-                            <h2 style="color:white; text-align: center;" class="heading">Snake Game</h2>
-                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, illum.</p>
+                                <a href="https://github.com/Manish9322/Brainwave_Matrix_Intern/tree/main/E-com%20website"
+                                    target="_blank"><button>Check Now</button></a>
+
+                                <span class="close-button"><button>Close </button></span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-box card">
 
-                    <img src="{{ url_for('static', filename='Img/Calculator-Using-React.js.png') }}" alt="" srcset="">
+            </div>
 
-                    <div class="overlay">
-                        <div class="contents">
-                            <h2 style="color:white; text-align: center;" class="heading">Calculator Using React.js</h2>
-                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, illum.</p>
+            <div class="project-list">
+
+                <!-- Calculator Card -->
+                <div class="project-box card" id="calculator-card">
+                    <img src="{{ url_for('static', filename='Img/Calculator-Using-React.js.png') }}" alt="Calculator">
+                </div>
+
+                <!-- Calculator Modal -->
+                <div class="modal" id="calculator-modal">
+                    <div class="modal-content">
+                        <h2>Calculator Using React.js</h2>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/Calculator-Using-React.js.png') }}"
+                                alt="Calculator Image">
+                            <div>
+                                <p>The Calculator is a modern web application built with React.js, offering a clean and
+                                    intuitive user interface for seamless interaction.</p>
+                                <p>Users can perform basic arithmetic operations like addition, subtraction,
+                                    multiplication, and division with real-time results displayed instantly.</p>
+                                <p>The calculator adapts to different devices, ensuring a smooth and responsive
+                                    experience on both desktop and mobile platforms.</p>
+                                <p>Designed with simplicity in mind, the application efficiently handles calculations
+                                    without lag, making it both user-friendly and reliable.</p>
+
+                                <a href="https://github.com/Manish9322/Calculator-Using-React.js"
+                                    target="_blank"><button>Check Now</button></a>
+                                <span class="close-button"><button>Close </button></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snake game card -->
+                <div class="project-box card" id="snake-game-card">
+                    <img src="{{ url_for('static', filename='Img/Snake-Game.png') }}" alt="Snake-Game">
+                </div>
+
+                <!-- Snake game modal -->
+                <div class="modal" id="snake-game-modal">
+                    <div class="modal-content">
+                        <h2>Snake Game</h2>
+
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/Snake-Game.png') }}" alt="Snake Game Image">
+                            <div>
+                                <p>The Snake Game is a classic arcade game built with JavaScript and HTML5 canvas,
+                                    offering smooth gameplay and simple controls.</p>
+                                <p> Players guide the snake to eat food
+                                    while avoiding collisions with walls and its own body. As the snake grows longer,
+                                    the challenge increases.</p>
+                                <p> The game is responsive and adapts well to different
+                                    devices, providing a fun and nostalgic experience for all.</p>
+
+                                <p> The Snake Game is built to provide smooth controls and real-time gameplay, making it
+                                    engaging and challenging as the snake grows longer.</p>
+
+                                <a href="https://manish9322.github.io/Snake_Game/" target="_blank"><button>Check
+                                        Now</button></a>
+                                <span class="close-button"><button>Close </button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- To Do List Card -->
+                <div class="project-box card" id="tdl-card">
+                    <img src="{{ url_for('static', filename='Img/To-Do-List.png') }}" alt="Snake-Game">
+                </div>
+
+                <!-- To Do List Modal -->
+                <div class="modal" id="tdl-modal">
+                    <div class="modal-content">
+                        <h2>To Do List</h2>
+
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/To-Do-List.png') }}" alt="Snake Game Image">
+                            <div>
+                                <p><br>The To-Do List project is a web application built using HTML, CSS, JavaScript,
+                                    Python, and Flask, designed for easy task management.</p>
+                                <p>It allows users to add, update, and delete tasks dynamically, with a clean and simple
+                                    user interface.</p>
+                                <p>The application is connected to a database to store tasks and ensures a seamless
+                                    experience for managing daily to-do activities.</p>
+                                <p>Users can also mark tasks as completed, providing an efficient way to track progress.
+                                </p>
+
+
+                                <a href="https://github.com/Manish9322/TempCast" target="_blank"><button>Check
+                                        Now</button></a>
+                                <span class="close-button"><button>Close </button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currency Converter Card -->
+                <div class="project-box card" id="converter-card">
+                    <img src="{{ url_for('static', filename='Img/Converter.png') }}" alt="Currency Converter">
+                </div>
+
+                <!-- Currency Converter Modal -->
+                <div class="modal" id="converter-modal">
+                    <div class="modal-content">
+                        <h2>Currency Converter</h2>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/Converter.png') }}" alt="Currency Converter">
+                            <div>
+                                <p>The Currency Converter is a web application built using HTML, CSS, and JavaScript,
+                                    utilizing a country rate API to provide real-time exchange rates.</p>
+                                <p>It allows users to easily convert currencies between various countries with an
+                                    intuitive interface.</p>
+                                <p>Fully responsive, the converter adapts to different devices, offering a smooth and
+                                    accurate experience for global currency conversions.</p>
+                                <p>The app also provides quick access to current rates, making it convenient for
+                                    travelers and international transactions.</p>
+
+                                <a href="https://manish9322.github.io/Currency-Converter/" target="_blank"><button>Check
+                                        Now</button></a>
+                                <span class="close-button"><button>Close </button></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="project-list">
+
+                <!-- HMS Card -->
+                <div class="project-box card" id="hms-card">
+                    <img src="{{ url_for('static', filename='Img/HMS.png') }}" alt="Calculator">
+                </div>
+
+                <!-- HMS Modal -->
+                <div class="modal" id="hms-modal">
+                    <div class="modal-content">
+                        <h2>Hotel Management System</h2>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/HMS.png') }}" alt="Calculator Image">
+                            <div>
+                                <p>The Hotel Management System is a desktop application built using Python, Tkinter,
+                                    and MySQL, designed with a simple and intuitive interface.</p>
+                                <p>It manages guest records, room bookings, and food expenses efficiently, utilizing
+                                    CRUD operations for seamless data management.</p>
+                                <p>The system also includes a bill generation feature for food expenses, making it a
+                                    complete solution for hotel operations.</p>
+                                <p>Additionally, it ensures data security and accuracy, providing reliable records for
+                                    smooth hotel management.</p>
+
+                                <span class="note" style="color: #0077B6; font-weight: bold;">Its a Desktop
+                                    Application</span>
+
+                                <span class="close-button note"><button>Close </button></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Zomato Card -->
+                <div class="project-box card" id="zomato-card">
+                    <img src="{{ url_for('static', filename='Img/Zomato-clone.png') }}" alt="Calculator">
+                </div>
+
+                <!-- Zomato Modal -->
+                <div class="modal" id="zomato-modal">
+                    <div class="modal-content">
+                        <h2>Zomato Clone</h2>
+                        <div class="container">
+                            <img src="{{ url_for('static', filename='Img/Zomato-clone.png') }}" alt="Calculator Image">
+                            <div>
+                                <p>The Zomato Clone project is a web application designed to replicate key features
+                                    of the Zomato platform, offering a modern food discovery experience.</p>
+                                <p>It allows users to explore restaurants, view menus, and check restaurant details with
+                                    an intuitive interface.</p>
+                                <p>The project is responsive, ensuring smooth navigation and functionality across
+                                    different devices.</p>
+                                <p>While focused on frontend development, it sets the groundwork for integrating future
+                                    features like user reviews and order placement.</p>
+
+                                <span class="note" style="color: #0077B6; font-weight: bold;">Comming Soon</span>
+                                <span class="close-button note"><button>Close </button></span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="project-list-2">
+            <div class="project-list">
+
+                <!-- A Card for throwing user to github account -->
+                <a href="https://github.com/Manish9322" target="_blank">
+                    <div class="more">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </a>
+
+            </div>
+
+
+            <!-- The below div contains the previous version of project section design -->
+
+            <!-- <div class="project-list-3">
 
                 <div class="project-box card">
 
-                    <img src="{{ url_for('static', filename='Img/Converter.png') }}" alt="" srcset="">
+                    <img src="{{ url_for('static', filename='Img/To-Do-List.png') }}" alt="" srcset="">
 
                     <div class="overlay">
-                        <div class="contents">
-                            <h2 style="color:white; text-align: center;" class="heading">Currency Converter</h2>
-                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, illum.</p>
-                        </div>
+                        <a href="https://github.com/Manish9322/Brainwave_Matrix_Intern/tree/main/T1-To-Do-List"
+                            target="_blank">
+                            <div class="contents">
+                                <h2 style="color:white; text-align: center;" class="heading">To Do List
+                                </h2>
+                                <p style="color: white;">Technologies Used : HTML5, CSS3, JavaScript, Python, MySQL,
+                                    Flask.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="project-box card">
 
-                    <img src="{{ url_for('static', filename='Img/HMS.png') }}" alt="" srcset="">
+                    <img src="{{ url_for('static', filename='Img/Zomato-clone.png') }}" alt="" srcset="">
 
                     <div class="overlay">
-                        <div class="contents">
-                            <h2 style="color:white; text-align: center;" class="heading">Hotel Management System</h2>
-                            <p style="color: white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Molestiae, illum.</p>
-                        </div>
+                        <a href="#">
+                            <div class="contents">
+                                <h2 style="color:white; text-align: center;" class="heading">Zomato-Clone
+                                </h2>
+                                <p style="color: white; text-align: center;">Comming Soon</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
 
                 <div class="project-box more">
-                    <a href="">
+                    <a href="https://github.com/Manish9322" target="_blank">
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
-            </div>
-
-
+            </div> -->
 
         </div>
-
-
     </section>
+
 
     <section id="contact">
         <div class="contact-div">
@@ -386,11 +693,9 @@
         </footer>
     </section>
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script>
-        
+
         $(document).ready(function () {
             $('#contactForm').on('submit', function (event) {
                 event.preventDefault();
@@ -409,9 +714,74 @@
                 });
             });
         });
+
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-link');
+            navLinks.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function (event) {
+            const menu = document.querySelector('#nav-link');
+            const hamburger = document.querySelector('#hamburger-menu');
+
+            // Check if the click was outside the menu and hamburger
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+
+        function setupModal(cardId, modalId) {
+            const card = document.getElementById(cardId);
+            const modal = document.getElementById(modalId);
+            const closeButton = modal.querySelector('.close-button');
+            const modalContent = modal.querySelector('.modal-content');
+
+
+            card.addEventListener('click', () => {
+                modal.style.display = 'block';
+                setTimeout(() => {
+                    modal.style.opacity = '1';
+                    modalContent.style.animation = 'slideDown 0.5s forwards';
+                }, 50);
+            });
+
+
+            closeButton.addEventListener('click', () => {
+                modalContent.style.animation = 'slideUp 0.5s forwards';
+                modal.style.opacity = '0';
+
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 500);
+            });
+
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modalContent.style.animation = 'slideUp 0.5s forwards';
+                    modal.style.opacity = '0';
+
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 500);
+                }
+            });
+        }
+
+        setupModal('snake-game-card', 'snake-game-modal');
+        setupModal('calculator-card', 'calculator-modal');
+        setupModal('converter-card', 'converter-modal');
+        setupModal('temp-card', 'temp-modal');
+        setupModal('hms-card', 'hms-modal');
+        setupModal('ecom-card', 'ecom-modal');
+        setupModal('tdl-card', 'tdl-modal');
+        setupModal('zomato-card', 'zomato-modal');
+
+
+
     </script>
-   
-   
+
 </body>
 
 </html>
