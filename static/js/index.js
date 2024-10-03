@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
