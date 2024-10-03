@@ -279,7 +279,7 @@ a {
     display: flex;
     justify-content: center;
 }
-
+/* 
 #projects .project-list .modal {
     display: none;
     position: fixed;
@@ -382,7 +382,7 @@ a {
     background-color: #0077B6;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 
-}
+} */
 
 #projects .project-list .project-box {
     /* border: 1px solid rgb(200, 200, 200); */
