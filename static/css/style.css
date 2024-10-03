@@ -295,7 +295,7 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-.modal .modal-content {
+#project .project-list .modal .modal-content {
     background-color: #fefefe;
     margin: 0 auto;
     padding: 20px;
@@ -335,12 +335,12 @@ a {
 }
 
 
-.modal .container {
+#project .project-list .modal .container {
     display: flex;
     justify-content: center;
 }
 
-.modal .container img {
+#project .project-list .modal .container img {
     width: 100%;
     height: auto;
     margin: 2rem;
@@ -350,18 +350,18 @@ a {
 
 }
 
-.modal h2 {
+#project .project-list .modal h2 {
     font-size: 3.5rem;
     text-align: center;
     margin: 0 0 1rem 0;
 }
 
-.modal .container .note {
+#project .project-list .modal .container .note {
     filter: drop-shadow(10px 10px 20px (0, 0, 0, 0.6));
 }
 
 
-.modal .container button {
+#project .project-list .modal .container button {
     padding: 1rem 3rem;
     margin: 0.5rem;
     background-color: white;
@@ -377,7 +377,7 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-.modal .container button:hover {
+#project .project-list .modal .container button:hover {
     color: white;
     background-color: #0077B6;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
