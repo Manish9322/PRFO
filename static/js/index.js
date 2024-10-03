@@ -145,7 +145,7 @@ function setupModal(cardId, modalId) {
     }
   });
 
-
+}
   setupModal("snake-game-card", "snake-game-modal");
   setupModal("calculator-card", "calculator-modal");
   setupModal("converter-card", "converter-modal");
@@ -154,4 +154,3 @@ function setupModal(cardId, modalId) {
   setupModal("ecom-card", "ecom-modal");
   setupModal("tdl-card", "tdl-modal");
   setupModal("zomato-card", "zomato-modal");
-}
