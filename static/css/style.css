@@ -794,10 +794,13 @@ textarea {
 
 }
 
-@media (max-width:477px) {
+@media (max-width:375px) {
 
 
-    #about {}
+    #about {
+        display: flex;
+        text-align: center;
+    }
 
     #about .about-div {
         padding: 2rem 3rem;
