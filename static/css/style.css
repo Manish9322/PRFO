@@ -972,6 +972,12 @@ textarea {
 
 
 @media (max-width:375px){
+    #about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 3rem;
+    }
 
     #about h2{
         font-size: 7rem;
