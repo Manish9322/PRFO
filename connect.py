@@ -29,7 +29,7 @@ def submit():
 
     try:
         smvt(first_name, last_name, email, message)
-        return 'Message Sent Successfully'
+        return ('', 204) 
 
     except ImportError as e:
         return f'Error: {e}'
