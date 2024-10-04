@@ -79,21 +79,6 @@ function showBackToTop() {
   }
 }
 
-// $(document).ready(function () {
-//   $("#contactForm").on("submit", function (event) {
-//     event.preventDefault();
-
-//     $.ajax({
-//       type: "POST",
-//       url: "/submit",
-//       data: $(this).serialize(),
-//       success: function () {
-//         $("#contactForm")[0].reset();
-//       },
-//       error: function () {},
-//     });
-//   });
-// });
 
 function toggleMenu() {
   const navLinks = document.getElementById("nav-link");

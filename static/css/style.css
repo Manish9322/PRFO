@@ -127,8 +127,11 @@ a {
 
 #about {
     display: flex;
-    flex-direction: column;
     text-align: center;
+}
+
+#about .about-div{
+    padding: 2rem 5rem 2rem 5rem;
 }
 
 #about .about-div p {
@@ -279,7 +282,8 @@ a {
     display: flex;
     justify-content: center;
 }
-/* 
+
+
 #projects .project-list .modal {
     display: none;
     position: fixed;
@@ -382,7 +386,7 @@ a {
     background-color: #0077B6;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 
-} */
+}
 
 #projects .project-list .project-box {
     /* border: 1px solid rgb(200, 200, 200); */
@@ -792,7 +796,55 @@ textarea {
 
 @media (max-width:477px) {
 
+
+    #about{
+    }
+
+    #about .about-div{
+        padding: 2rem 3rem;
+    }
+
     #about h1 {
+        font-size: 4.5rem;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    #about .summary {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    #work-experience{
+        width: 100%;
+    }
+
+    #work-experience #work-div {
+        padding: 2rem 3rem;
+    }
+
+
+    #navbar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #0077B6;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 10;
+    }
+
+    #navbar .navbar-div {
+        display: flex;
+        float: right;
+        padding-left: 23rem;
+    }
+    /* #about h1 {
         font-size: 4.5rem;
         margin: 0;
         padding: 0;
@@ -820,10 +872,26 @@ textarea {
         line-height: 2;
     }
 
+    #navbar {
+        background-color: #0077B6;
+        height: 4rem;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center; 
+        z-index: 10;
+        padding: 0 1rem; 
+        text-align: center;
+    }
+    
     #navbar .navbar-div {
         display: flex;
-        float: right;
-        padding-left: 20.1rem;
+        justify-content: flex-end; 
+        width: 100%; 
+        padding-left: 0; 
+        padding-right: 1rem; 
     }
 
     #hamburger-menu {
@@ -873,7 +941,7 @@ textarea {
         margin: 0;
         text-align: center;
         color: white;
-    }
+    } */
 
     .back-to-top {
         bottom: 66px;
