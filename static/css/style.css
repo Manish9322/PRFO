@@ -130,7 +130,7 @@ a {
     text-align: center;
 }
 
-#about .about-div{
+#about .about-div {
     padding: 2rem 5rem 2rem 5rem;
 }
 
@@ -457,7 +457,7 @@ a {
 }
 
 #projects .more:hover::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 
@@ -782,12 +782,12 @@ textarea {
         margin: 2rem;
     }
 
-    
-    #projects .more{
+
+    #projects .more {
         width: 100%;
     }
 
-    #projects .more::after{
+    #projects .more::after {
         font-size: 1rem;
     }
 
@@ -797,10 +797,9 @@ textarea {
 @media (max-width:477px) {
 
 
-    #about{
-    }
+    #about {}
 
-    #about .about-div{
+    #about .about-div {
         padding: 2rem 3rem;
     }
 
@@ -816,16 +815,15 @@ textarea {
         padding: 0;
     }
 
-    #work-experience{
+    #work-experience {
         /* width: 100%; */
+        display: flex;
+        text-align: center;
     }
 
     #work-experience #work-div {
         padding: 2rem 3rem;
-    }
-
-    #work-experience .heading{
-        font-size: 1.5rem;
+        text-align: center;
     }
 
     #navbar nav ul {
@@ -847,6 +845,17 @@ textarea {
         float: right;
         padding-left: 23rem;
     }
+
+    #education{
+        display: flex;
+        text-align: center;
+    }
+
+    #ed-container{
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+
     /* #about h1 {
         font-size: 4.5rem;
         margin: 0;
