@@ -976,5 +976,9 @@ textarea {
     #about h2{
         font-size: 7rem;
     }
+
+    #work-experience #work-div {
+        padding: 0;
+    }
 }
 
