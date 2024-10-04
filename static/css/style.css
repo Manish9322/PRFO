@@ -977,6 +977,10 @@ textarea {
         font-size: 7rem;
     }
 
+    #work-experience{
+        width: 200%;
+    }
+
     #work-experience #work-div {
         padding: 2rem;
     }
