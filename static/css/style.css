@@ -790,12 +790,12 @@ textarea {
     #projects .more::after {
         font-size: 1rem;
     }
-
-
 }
 
-@media (max-width:375px) {
+/* @media (max-width:375px) {
 
+
+    
 
     #about {
         display: flex;
@@ -819,12 +819,18 @@ textarea {
     }
 
     #work-experience {
-        /* width: 100%; */
+        
         display: flex;
         text-align: center;
     }
 
+    #work-experience #work-div #info {
+        text-align: center;
+    }
+
     #work-experience #work-div {
+        margin: 5rem;
+        display: flex;
         padding: 2rem 3rem;
         text-align: center;
     }
@@ -859,7 +865,7 @@ textarea {
         text-align: center;
     }
 
-    /* #about h1 {
+     #about h1 {
         font-size: 4.5rem;
         margin: 0;
         padding: 0;
@@ -940,6 +946,7 @@ textarea {
 
     .modal .container .note {
         display: block;
+        font-size: 5rem;
         text-align: center;
     }
 
@@ -951,15 +958,23 @@ textarea {
         font-size: 1rem;
     }
 
-
     #footer .footer-div p {
         margin: 0;
         text-align: center;
         color: white;
-    } */
+    } 
 
     .back-to-top {
         bottom: 66px;
     }
 
+} */
+
+
+@media (max-width:375px){
+
+    #about h2{
+        font-size: 7rem;
+    }
 }
+
