@@ -26,6 +26,113 @@
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <style>
+        
+#projects .project-list .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.5s ease;
+    font-family: 'Raleway', sans-serif;
+}
+
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 80%;
+    height: auto;
+    position: relative;
+    top: -100px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    to {
+        top: 100px;
+        opacity: 1;
+
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 100px;
+        opacity: 1;
+    }
+
+    to {
+        top: -100px;
+        opacity: 0;
+    }
+}
+
+
+.modal .container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal .container img {
+    width: 100%;
+    height: auto;
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.modal h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal .container .note {
+    filter: drop-shadow(10px 10px 20px (0, 0, 0, 0.6));
+}
+
+
+.modal .container button {
+    padding: 1rem 3rem;
+    margin: 0.5rem;
+    background-color: white;
+    color: #0077B6;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.modal .container button:hover {
+    color: white;
+    background-color: #0077B6;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+
+}
+    </style>
+
 
 </head>
 
@@ -70,9 +177,6 @@
         </div>
     </section>
 
-    <section>
-        <h2>Manish sonawane</h2>
-    </section>
 
     <section id="about">
 
