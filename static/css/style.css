@@ -279,7 +279,7 @@ a {
     display: flex;
     justify-content: center;
 }
-/* 
+
 #projects .project-list .modal {
     display: none;
     position: fixed;
@@ -295,7 +295,7 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-#project .project-list .modal .modal-content {
+.modal .modal-content {
     background-color: #fefefe;
     margin: 0 auto;
     padding: 20px;
@@ -335,12 +335,12 @@ a {
 }
 
 
-#project .project-list .modal .container {
+.modal .container {
     display: flex;
     justify-content: center;
 }
 
-#project .project-list .modal .container img {
+.modal .container img {
     width: 100%;
     height: auto;
     margin: 2rem;
@@ -350,18 +350,18 @@ a {
 
 }
 
-#project .project-list .modal h2 {
+.modal h2 {
     font-size: 3.5rem;
     text-align: center;
     margin: 0 0 1rem 0;
 }
 
-#project .project-list .modal .container .note {
+.modal .container .note {
     filter: drop-shadow(10px 10px 20px (0, 0, 0, 0.6));
 }
 
 
-#project .project-list .modal .container button {
+.modal .container button {
     padding: 1rem 3rem;
     margin: 0.5rem;
     background-color: white;
@@ -377,12 +377,12 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-#project .project-list .modal .container button:hover {
+.modal .container button:hover {
     color: white;
     background-color: #0077B6;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 
-} */
+}
 
 #projects .project-list .project-box {
     /* border: 1px solid rgb(200, 200, 200); */

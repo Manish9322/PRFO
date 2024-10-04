@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -80,6 +79,21 @@ function showBackToTop() {
   }
 }
 
+$(document).ready(function () {
+  $("#contactForm").on("submit", function (event) {
+    event.preventDefault();
+
+    $.ajax({
+      type: "POST",
+      url: "/submit",
+      data: $(this).serialize(),
+      success: function () {
+        $("#contactForm")[0].reset();
+      },
+      error: function () {},
+    });
+  });
+});
 
 function toggleMenu() {
   const navLinks = document.getElementById("nav-link");
@@ -129,13 +143,13 @@ function setupModal(cardId, modalId) {
       }, 500);
     }
   });
-
 }
-  setupModal("snake-game-card", "snake-game-modal");
-  setupModal("calculator-card", "calculator-modal");
-  setupModal("converter-card", "converter-modal");
-  setupModal("temp-card", "temp-modal");
-  setupModal("hms-card", "hms-modal");
-  setupModal("ecom-card", "ecom-modal");
-  setupModal("tdl-card", "tdl-modal");
-  setupModal("zomato-card", "zomato-modal");
+
+setupModal("snake-game-card", "snake-game-modal");
+setupModal("calculator-card", "calculator-modal");
+setupModal("converter-card", "converter-modal");
+setupModal("temp-card", "temp-modal");
+setupModal("hms-card", "hms-modal");
+setupModal("ecom-card", "ecom-modal");
+setupModal("tdl-card", "tdl-modal");
+setupModal("zomato-card", "zomato-modal");
