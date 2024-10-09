@@ -970,28 +970,8 @@ textarea {
 } */
 
 
-@media (max-width:400px){
-
-    #navbar {
-        height: 7rem;
-    }
-
-    #navbar .navbar-div {
-        padding-left: 35.5rem;
-    }
-
-    #hamburger-menu div {
-        width: 50px;
-        height: 5px;
-    }
-
-    #navbar a img {
-        width: 3rem;
-    }
-
-
+@media (max-width:375px){
     #about {
-        width: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1014,51 +994,6 @@ textarea {
 
     #work-experience #work-div {
         padding: 2rem;
-    }
-
-    #education{
-        width: 200%;
-    }
-
-    #skills-s{
-        width: 200%;
-    }
-
-    #projects{
-        width: 200%;
-    }
-
-    #contact{
-        width: 200%;
-    }
-
-    #footer{
-        width: 200%;
-    }
-
-    #navbar nav ul.active {
-        height: 100%;
-    }
-
-    .modal .container {
-        flex-direction: column;
-    }
-
-    .modal .container img {
-        max-width: 90%;
-        margin: 0;
-    }
-
-    .modal .container .text{
-        font-size: 1.8rem;
-    }
-
-    .modal .container a button {
-        font-size: 1.8rem;
-    }
-
-    .modal .container span button{
-        font-size: 1.8rem;
     }
 }
 
