@@ -970,7 +970,7 @@ textarea {
 } */
 
 
-@media (max-width:376px){
+@media (max-width:480px){
     #about {
         width: fit-content;
         display: flex;
