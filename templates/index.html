@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Manish sonawane</title>
 
     <!-- For Font -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
-
+    <!-- For Icon -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='Img/Icon-1.png') }}" type="image/x-icon">
 
     <!-- For Icons -->
@@ -20,117 +20,117 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- For Devicons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-
+    <!-- For index.js -->
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-        
-#projects .project-list .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: opacity 0.5s ease;
-    font-family: 'Raleway', sans-serif;
-}
+        #projects .project-list .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            transition: opacity 0.5s ease;
+            font-family: 'Raleway', sans-serif;
+        }
 
-.modal .modal-content {
-    background-color: #fefefe;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 80%;
-    height: auto;
-    position: relative;
-    top: -100px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    animation: slideDown 0.5s forwards;
-    opacity: 0;
-}
+        .modal .modal-content {
+            background-color: #fefefe;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 80%;
+            height: auto;
+            position: relative;
+            top: -100px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            animation: slideDown 0.5s forwards;
+            opacity: 0;
+        }
 
-@keyframes slideDown {
-    from {
-        top: -100px;
-        opacity: 0;
-    }
+        @keyframes slideDown {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
 
-    to {
-        top: 100px;
-        opacity: 1;
+            to {
+                top: 100px;
+                opacity: 1;
 
-    }
-}
+            }
+        }
 
-@keyframes slideUp {
-    from {
-        top: 100px;
-        opacity: 1;
-    }
+        @keyframes slideUp {
+            from {
+                top: 100px;
+                opacity: 1;
+            }
 
-    to {
-        top: -100px;
-        opacity: 0;
-    }
-}
-
-
-.modal .container {
-    display: flex;
-    justify-content: center;
-}
-
-.modal .container img {
-    width: 100%;
-    height: auto;
-    margin: 2rem;
-    border-radius: 10px;
-    overflow: hidden;
-    align-items: center;
-
-}
-
-.modal h2 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.modal .container .note {
-    filter: drop-shadow(10px 10px 20px (0, 0, 0, 0.6));
-}
+            to {
+                top: -100px;
+                opacity: 0;
+            }
+        }
 
 
-.modal .container button {
-    padding: 1rem 3rem;
-    margin: 0.5rem;
-    background-color: white;
-    color: #0077B6;
-    border: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease;
-    outline: none;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-}
+        .modal .container {
+            display: flex;
+            justify-content: center;
+        }
 
-.modal .container button:hover {
-    color: white;
-    background-color: #0077B6;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+        .modal .container img {
+            width: 100%;
+            height: auto;
+            margin: 2rem;
+            border-radius: 10px;
+            overflow: hidden;
+            align-items: center;
 
-}
+        }
+
+        .modal h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+
+        .modal .container .note {
+            filter: drop-shadow(10px 10px 20px (0, 0, 0, 0.6));
+        }
+
+
+        .modal .container button {
+            padding: 1rem 3rem;
+            margin: 0.5rem;
+            background-color: white;
+            color: #0077B6;
+            border: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+            outline: none;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .modal .container button:hover {
+            color: white;
+            background-color: #0077B6;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+
+        }
     </style>
 
 
@@ -505,7 +505,7 @@
                         <div class="container">
                             <img src="{{ url_for('static', filename='Img/Calculator-Using-React.js.png') }}"
                                 alt="Calculator Image">
-                            <div  class="text">
+                            <div class="text">
                                 <p>The Calculator is a modern web application built with React.js, offering a clean and
                                     intuitive user interface for seamless interaction.</p>
                                 <p>Users can perform basic arithmetic operations like addition, subtraction,
@@ -536,7 +536,7 @@
 
                         <div class="container">
                             <img src="{{ url_for('static', filename='Img/Snake-Game.png') }}" alt="Snake Game Image">
-                            <div  class="text">
+                            <div class="text">
                                 <p>The Snake Game is a classic arcade game built with JavaScript and HTML5 canvas,
                                     offering smooth gameplay and simple controls.</p>
                                 <p> Players guide the snake to eat food
@@ -568,7 +568,7 @@
 
                         <div class="container">
                             <img src="{{ url_for('static', filename='Img/To-Do-List.png') }}" alt="Snake Game Image">
-                            <div  class="text">
+                            <div class="text">
                                 <p><br>The To-Do List project is a web application built using HTML, CSS, JavaScript,
                                     Python, and Flask, designed for easy task management.</p>
                                 <p>It allows users to add, update, and delete tasks dynamically, with a clean and simple
@@ -598,7 +598,7 @@
                         <h2>Currency Converter</h2>
                         <div class="container">
                             <img src="{{ url_for('static', filename='Img/Converter.png') }}" alt="Currency Converter">
-                            <div  class="text">
+                            <div class="text">
                                 <p>The Currency Converter is a web application built using HTML, CSS, and JavaScript,
                                     utilizing a country rate API to provide real-time exchange rates.</p>
                                 <p>It allows users to easily convert currencies between various countries with an
